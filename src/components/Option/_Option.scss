@@ -17,6 +17,10 @@
       margin-top: 2rem;
     }
 
+    @include respond(five) {
+      margin: 2rem 1rem 0 1rem;
+    }
+
   &__num {
     font-size: 2rem;
     font-weight: 600;

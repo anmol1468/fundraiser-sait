@@ -1,6 +1,13 @@
 .register {
   padding: 2rem 3.94rem;
 
+  @include respond(five) {
+    padding: 2rem 2.5rem;
+  }
+  @include respond(four) {
+    padding: 2rem 2.1rem;
+  }
+
   h2 {
     font-size: 2rem;
   }
