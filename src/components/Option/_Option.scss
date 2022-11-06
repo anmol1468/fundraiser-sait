@@ -1,0 +1,53 @@
+.option {
+  // background-color: #a0e5ee;
+  color: #fff;
+  background-color: rgb(31, 31, 31);
+  padding: 3rem 2rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  max-width: 20rem;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+
+  @include respond(seven) {
+      margin-top: 2rem;
+    }
+
+  &__num {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__description {
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  &__forward {
+
+    button {
+      padding: 0.6rem 1rem;
+      border-radius: 1rem;
+      border: none;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      background-color: #ffc560;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      &:active {
+        transform: translateY(3px) scale(0.95);
+      }
+
+    }
+  }
+}

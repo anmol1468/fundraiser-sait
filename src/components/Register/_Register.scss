@@ -1,0 +1,18 @@
+.register {
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  &__options {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(seven) {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  }
+}
